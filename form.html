@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Information of Students</h1>
+        <form action="form.php">
+            <div>
+            <label for="Name">Name:</label>
+            <input type="text" name="name" placeholder="Enter your Name"id="Name">
+        </div><br>
+        <div>
+            <label for="Rollno">Roll No:</label>
+            <input type="text" name="rollno" placeholder="Enter your Roll No."id=Rollno><br>
+        </div>
+            <!-- ids should be different -->
+            <!-- name is used by backend to recognize type of data -->
+            <!-- in radio options,all the names should be same so that only one can be selected -->
+            <label for="sectionida">Select your Section:
+                <input type="radio" value="section a" name="section" id="sectionida">Section A
+            </label>
+            <label for="sectionidb">
+            <input type="radio" value="section b" name="section" id="sectionidb">Section B
+            </label>
+            <label for="sectionidc">
+                <input type="radio" value="section c" name="section" id="sectionidc">Section C
+            </label><Br>
+            <label for="vaccine">
+            <input type="checkbox" name="vaccinated" id="vaccine">Are you vaccinated?
+        </label><br>
+        <textarea name="explain" id="explain" cols="30" rows="10" placeholder="your text"></textarea><br>
+        <label for="activity">activity</label>
+        <select name="activity" id="activity">
+            <option value="no activity">select the activity</option>
+            <option value="dance">dance</option>
+            <option value="music">music</option>
+            <option value="art">art</option>
+        </select>
+        <input type="submit" value="SUBMIT NOW">
+        <input type="reset" value="RESET NOW">
+           </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-areas:
+                'nav nav nav nav nav'
+                'sec sec sec sec asd'
+                'foot foot foot foot foot';
+        }
+        .box {
+            background-color: rgb(174, 112, 231);
+            border: 2px solid black;
+            padding: 20px;
+        }
+        #navbar {
+            grid-area: nav;
+        }
+        #section {
+            grid-area: sec;
+        }
+        #aside {
+            grid-area: asd;
+        }
+        footer {
+            grid-area: foot;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">Home Contact us Services search</div>
+        <div id="section" class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium aperiam rerum
+            deserunt nostrum, tempora nesciunt! Rem odit facere voluptatum quam assumenda aut saepe architecto at
+            excepturi iste eveniet, suscipit, eligendi adipisci officiis laboriosam atque eum quibusdam aperiam nulla
+            culpa? Autem nostrum maxime ducimus, voluptas architecto nihil. Dicta aut dignissimos debitis?</div>
+        <div id="aside" class="box">Lorem ipsum dolor, Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Placeat, minus animi iusto numquam deserunt vel ipsa molestias, a sit iste cumque labore nisi rerum
+            voluptatum ex excepturi illo quidem accusantium! sit amet consectetur adipisicing elit. Totam nulla ipsum,
+            delectus labore repellendus cupiditate nam velit aspernatur doloremque, vitae consequuntur rerum animi modi?
+            Rem dolor nemo eius iure esse!Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aliquid odio
+            quis eos totam, repellendus, animi accusantium explicabo delectus minus tenetur laudantium iste culpa optio
+            illo eaque eum consequuntur est? Architecto sequi quisquam omnis dolorum hic officiis atque vero minus.
+            Reiciendis veniam maxime animi obcaecati debitis totam dicta accusamus tenetur!</div>
+        <footer class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptates possimus quae
+            reprehenderit ullam sit optio explicabo dolorum dolorem mollitia.</footer>
+    </div>
+</body>
+</html>
