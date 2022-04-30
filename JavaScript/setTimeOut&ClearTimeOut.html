@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        // setTimeout-- allows us to run the function once after the interval of time
+        // clearTimeout-- allows us to run the funtion repeatedly after the interval of time
+
+        function greet(name) {
+            console.log("Helloooooo "+name);
+        }
+        console.log("Heyyyy");
+        setTimeout(greet, 5000); 
+        // don't call the function instead write the name of the function in the bracket
+
+        // to clear the timeout(now the timeout will not be executed)
+        timeout=setTimeout(greet, 5000); 
+        console.log(timeout);
+        clearTimeout(timeout);
+
+        // to repeatedly run a function
+        interval=setInterval(greet,1000,"Dakshina");
+        console.log(interval);  
+        clearInterval(interval);
+
+        
+
+    </script>
+</body>
+
+</html>
